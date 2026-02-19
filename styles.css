@@ -86,10 +86,18 @@ main {
 
 .hero {
   padding: 2.4rem 0 2.2rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
-  gap: 1.2rem;
+  display: block;
+}
+
+.hero-copy {
+  max-width: 860px;
+}
+
+.title-row {
+  display: flex;
   align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .kicker {
@@ -106,6 +114,15 @@ h1 {
   line-height: 1.05;
 }
 
+.inline-avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
 .lead {
   color: var(--muted);
   max-width: 760px;
@@ -118,19 +135,6 @@ h1 {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
-}
-
-.hero-profile {
-  margin: 0;
-  justify-self: center;
-}
-
-.hero-profile img {
-  width: min(320px, 100%);
-  height: auto;
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
 .btn {
@@ -275,12 +279,13 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
+  .title-row {
+    align-items: flex-start;
   }
 
-  .hero-profile {
-    justify-self: start;
+  .inline-avatar {
+    width: 60px;
+    height: 60px;
   }
 
   .project-grid {
