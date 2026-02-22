@@ -308,11 +308,26 @@ h3 {
   color: var(--accent-dark);
 }
 
-footer {
-  max-width: 1120px;
-  margin: 1.3rem auto 2.1rem;
-  padding: 0 1.2rem;
-  color: #64748b;
+.category-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+.chips-list {
+  color: var(--muted);
+  font-size: 0.9rem;
+  background: var(--surface-soft);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px dashed var(--line);
+}
+
+.additional-projects {
+  margin-top: 3rem;
 }
 
 .reveal {
