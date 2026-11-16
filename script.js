@@ -11,8 +11,8 @@
 
   // language
   var titles = {
-    fr: "Husain Khatba · Ingénieur IA & Data Engineer",
-    en: "Husain Khatba · AI Engineer & Data Engineer",
+    fr: "Husain KHATBA · Ingénieur IA & Data Engineer",
+    en: "Husain KHATBA · AI Engineer & Data Engineer",
   };
   function setLang(l) {
     root.lang = l;
