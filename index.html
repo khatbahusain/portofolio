@@ -1,200 +1,345 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Husain Khatba - Data and AI Engineer building production-grade data platforms and intelligent applications."
-    />
-    <title>Husain Khatba | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="bg-grid" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#home">HK</a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Husain Khatba · Ingénieur IA & Data Engineer</title>
+  <meta name="description" content="Husain Khatba, Ingénieur IA et Data Engineer à Rennes : agents IA, serveurs MCP, LLM et plateformes de données de bout en bout pour la Région Bretagne, la Région Normandie et des clients industriels." />
+  <meta property="og:title" content="Husain Khatba · Ingénieur IA & Data Engineer" />
+  <meta property="og:description" content="Agents IA, LLM et plateformes de données de bout en bout, de la collecte à la mise en production." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://khatbahusain.github.io/portofolio/" />
+  <meta property="og:image" content="https://khatbahusain.github.io/portofolio/assets/husain.jpg" />
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // apply saved preferences before paint
+    try {
+      var l = localStorage.getItem("lang"); if (l) document.documentElement.lang = l;
+      var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="fr">Aller au contenu</span><span data-l="en">Skip to content</span></a>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Husain Khatba">HK</a>
+      <nav class="nav" aria-label="Navigation">
+        <a href="#projets"><span data-l="fr">Projets</span><span data-l="en">Projects</span></a>
+        <a href="#parcours"><span data-l="fr">Parcours</span><span data-l="en">Experience</span></a>
+        <a href="#competences"><span data-l="fr">Compétences</span><span data-l="en">Skills</span></a>
+        <a href="#formation"><span data-l="fr">Formation</span><span data-l="en">Education</span></a>
         <a href="#contact">Contact</a>
       </nav>
-    </header>
+      <div class="tools">
+        <button class="tool" id="lang-toggle" type="button" aria-label="Changer de langue / Switch language">
+          <span data-l="fr">EN</span><span data-l="en">FR</span>
+        </button>
+        <button class="tool" id="theme-toggle" type="button" aria-label="Thème clair / sombre">
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <main id="home">
-      <section class="hero reveal">
-        <div class="hero-copy">
-          <p class="kicker">Data and AI Engineer</p>
-          <div class="title-row">
-            <h1>Husain Khatba</h1>
-            <img class="inline-avatar" src="img/banner/home-left-1.png" alt="Portrait of Husain Khatba" loading="eager" />
-          </div>
-          <p class="lead">
-            I design and ship practical AI and data systems: from ETL pipelines and
-            PostgreSQL models to FastAPI services and production-ready interfaces.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://breizhcompetences.com/" target="_blank" rel="noreferrer">BreizhCompetences</a>
-            <a class="btn btn-primary" href="https://github.com/khatbahusain" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn btn-ghost" href="Husain_Khatba_CV_2026.pdf" target="_blank" rel="noreferrer">Download CV</a>
-          </div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot"></span><span data-l="fr">Ingénieur IA & Data Engineer · Rennes</span><span data-l="en">AI Engineer & Data Engineer · Rennes, France</span></p>
+        <h1>Husain Khatba</h1>
+        <p class="lead" data-l="fr">Je conçois des <strong>agents IA</strong> et des <strong>plateformes de données</strong> de bout en bout : collecte, nettoyage et croisement des données, modèles de langage, serveurs MCP, puis mise en production.</p>
+        <p class="lead" data-l="en">I build <strong>AI agents</strong> and end-to-end <strong>data platforms</strong>: data collection, cleaning and cross-referencing, language models, MCP servers, all the way to production.</p>
+        <div class="cta">
+          <a class="btn primary" href="Husain_Khatba_CV_2026.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+            <span data-l="fr">Télécharger le CV</span><span data-l="en">Download CV (FR)</span>
+          </a>
+          <a class="btn" href="https://www.linkedin.com/in/husain-khatba-aa027a13a/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/khatbahusain" target="_blank" rel="noopener">GitHub</a>
         </div>
-      </section>
-
-      <section id="about" class="panel reveal">
-        <h2>Expertise & Focus</h2>
-        <div class="chips">
-          <span>Python</span>
-          <span>FastAPI</span>
-          <span>PostgreSQL</span>
-          <span>ETL</span>
-          <span>LLM / NLP</span>
-          <span>Docker</span>
-          <span>React + TypeScript</span>
-          <span>MLOps</span>
-          <span>FAISS Vector Search</span>
-          <span>Computer Vision</span>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait">
+          <img src="assets/husain.jpg" alt="Portrait de Husain Khatba" width="560" height="560" />
         </div>
-      </section>
+        <span class="float f1">LLM</span>
+        <span class="float f2">MCP</span>
+        <span class="float f3">PostgreSQL</span>
+        <span class="float f4">FastAPI</span>
+      </div>
+    </section>
 
-      <section id="projects" class="reveal">
-        <h2>Project Ecosystem</h2>
-        <p class="projects-intro">
-          A comprehensive overview of my technical contributions and R&D projects.
-        </p>
+    <!-- STATS -->
+    <section class="wrap stats reveal" aria-label="En bref">
+      <div class="stat"><b>5+</b><span data-l="fr">ans en IA & Data</span><span data-l="en">years in AI & Data</span></div>
+      <div class="stat"><b>2</b><span data-l="fr">Régions accompagnées : Bretagne et Normandie</span><span data-l="en">French regions served: Brittany and Normandy</span></div>
+      <div class="stat"><b>Data Engineer</b><span data-l="fr">certifié Mines Paris – PSL</span><span data-l="en">certified by Mines Paris – PSL</span></div>
+      <div class="stat"><b>AI-102</b><span data-l="fr">Microsoft Azure AI Engineer</span><span data-l="en">Microsoft Azure AI Engineer</span></div>
+    </section>
 
-        <h3 class="category-title">Professional Platforms & Data Products</h3>
-        <div class="project-grid">
-          <article class="card">
-            <p class="tag">Full-Stack Platform</p>
-            <h3>datacompetences-restitution</h3>
-            <p>Exploration platform for employment/skills/training data with FastAPI, React and PostgreSQL.</p>
-            <div class="card-actions">
-              <a class="action-link" href="https://breizhcompetences.com/" target="_blank">breizhcompetences.com</a>
+    <!-- FEATURED PROJECTS -->
+    <section class="wrap section" id="projets">
+      <div class="section-head reveal">
+        <p class="kicker">01</p>
+        <h2><span data-l="fr">Projets phares</span><span data-l="en">Featured work</span></h2>
+        <p class="section-sub" data-l="fr">Des projets menés en prestation pour les clients de Maestria Innovation, en production aujourd'hui.</p>
+        <p class="section-sub" data-l="en">Projects delivered for Maestria Innovation's clients, running in production today.</p>
+      </div>
+
+      <div class="featured">
+        <article class="project big reveal">
+          <div class="project-top">
+            <div class="logos"><span class="logo-tile"><img src="assets/logos/bretagne.png" alt="Région Bretagne" /></span></div>
+            <a class="live" href="https://breizhcompetences.com/" target="_blank" rel="noopener">breizhcompetences.com ↗</a>
+          </div>
+          <p class="client">Région Bretagne</p>
+          <h3>Data Breizh Compétences</h3>
+          <p data-l="fr">Plateforme régionale d'analyse de l'emploi, de la formation et des compétences en Bretagne.</p>
+          <p data-l="en">Regional platform analysing jobs, training and skills across Brittany.</p>
+          <ul data-l="fr">
+            <li>Collecte et nettoyage quotidiens des données (API France Travail, Onisep, GREF, open data RNCP) dans PostgreSQL, modèle analytique en étoile.</li>
+            <li>Extraction des compétences dans les offres et les formations par LLM, rapprochement avec le référentiel ROME par embeddings.</li>
+            <li>Application web de restitution, déployée avec Docker.</li>
+          </ul>
+          <ul data-l="en">
+            <li>Daily collection and cleaning of job and training data (France Travail API, Onisep, GREF, RNCP open data) into PostgreSQL, with a star-schema analytics model.</li>
+            <li>LLM-based skill extraction from job ads and courses, matched to the ROME skills framework with embeddings.</li>
+            <li>Web analytics application, deployed with Docker.</li>
+          </ul>
+          <div class="tags"><span>ETL</span><span>PostgreSQL</span><span>NuExtract</span><span>vLLM</span><span>ChromaDB</span><span>FastAPI</span><span>React</span></div>
+        </article>
+
+        <article class="project big reveal">
+          <div class="project-top">
+            <div class="logos">
+              <span class="logo-tile wide"><img src="assets/logos/carif.png" alt="Carif-Oref Normandie" /></span>
+              <span class="logo-tile"><img src="assets/logos/normandie.png" alt="Région Normandie" /></span>
             </div>
-          </article>
-          <article class="card">
-            <p class="tag">AI Service</p>
-            <h3>datacompetences-ia & v2</h3>
-            <p>Advanced skill extraction API utilizing LLMs (Mistral), Sentence Transformers, and FAISS HNSW retrieval.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Data Engineering</p>
-            <h3>datacompetences-data</h3>
-            <p>End-to-end ETL pipelines ingesting ROME/RNCP/offres into analytical PostgreSQL schemas.</p>
-          </article>
-        </div>
+            <span class="badge"><span data-l="fr">IA agentique</span><span data-l="en">Agentic AI</span></span>
+          </div>
+          <p class="client">Carif-Oref Normandie · Région Normandie</p>
+          <h3><span data-l="fr">Agent IA emploi-formation</span><span data-l="en">Jobs & training AI agent</span></h3>
+          <p data-l="fr">Un agent spécialisé dans l'emploi et la formation en Normandie, qui répond aux questions des équipes à partir de données fiables et à jour.</p>
+          <p data-l="en">An agent specialised in jobs and training in Normandy, answering the teams' questions from reliable, up-to-date data.</p>
+          <ul data-l="fr">
+            <li>Collecte automatisée et nettoyage des données (France Travail, Carif-Oref, RNCP / Certif Info).</li>
+            <li>Croisement des offres, des demandeurs d'emploi, des sortants de formation et de l'offre de formation par métier, compétence et territoire.</li>
+            <li>Serveur MCP qui expose ces données à l'agent sous forme d'outils ; orchestration LLM + outils pour analyser les écarts de compétences.</li>
+          </ul>
+          <ul data-l="en">
+            <li>Automated collection and cleaning of data (France Travail, Carif-Oref, RNCP / Certif Info).</li>
+            <li>Cross-referencing job ads, jobseekers, training graduates and course offers by occupation, skill and territory.</li>
+            <li>An MCP server exposing this data to the agent as tools; LLM + tool orchestration to analyse skills gaps.</li>
+          </ul>
+          <div class="tags"><span>MCP</span><span>Tool calling</span><span>LLM</span><span>PostgreSQL</span><span>FastAPI</span><span>React</span></div>
+        </article>
+      </div>
 
-        <h3 class="category-title">Machine Learning & Computer Vision</h3>
-        <div class="project-grid">
-          <article class="card">
-            <p class="tag">Deep Learning</p>
-            <h3>P8-Semantic-Segmentation</h3>
-            <p>Image segmentation pipelines for high-precision pixel-level classification tasks.</p>
-          </article>
-          <article class="card">
-            <p class="tag">System Design</p>
-            <h3>P9-Recommendation-System</h3>
-            <p>Recommendation engine architecture focused on relevance and ranking for personalized discovery.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Detection</p>
-            <h3>AnomalyDetector</h3>
-            <p>R&D into API-driven anomaly detection patterns for identifying abnormal time-series data.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Modeling</p>
-            <h3>models / churn_model</h3>
-            <p>Collections of trained models and predictive analytics for customer retention and behavior.</p>
-          </article>
-        </div>
+      <div class="featured small">
+        <article class="project reveal">
+          <div class="project-top"><div class="logos"><span class="logo-tile wide"><img src="assets/logos/fleury.png" alt="Fleury Michon" /></span></div></div>
+          <p class="client">Fleury Michon</p>
+          <h3><span data-l="fr">Automatisation des imports de données</span><span data-l="en">Data import automation</span></h3>
+          <p data-l="fr">POC pour automatiser des workflows complexes d'import de données chez l'industriel agroalimentaire.</p>
+          <p data-l="en">Proof of concept automating complex data import workflows for the food manufacturer.</p>
+          <div class="tags"><span>Python</span><span>Data Engineering</span><span>POC</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-top"><div class="logos"><span class="logo-tile"><img src="assets/logos/orange.png" alt="Orange" /></span></div></div>
+          <p class="client">Orange Innovation</p>
+          <h3><span data-l="fr">Chatbots et NLP</span><span data-l="en">Chatbots & NLP</span></h3>
+          <p data-l="fr">Benchmark des pipelines NLU, clustering sémantique de textes, voix dans les chatbots et découpage en micro-bots.</p>
+          <p data-l="en">NLU pipeline benchmark, semantic text clustering, voice in chatbots and splitting bots into micro-bots.</p>
+          <div class="tags"><span>Rasa</span><span>CamemBERT</span><span>Speech-to-Text</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-top"><div class="logos"><span class="logo-tile icon">≋</span></div></div>
+          <p class="client"><span data-l="fr">Objets connectés</span><span data-l="en">IoT</span></p>
+          <h3><span data-l="fr">Qualité de l'air intérieur</span><span data-l="en">Indoor air quality</span></h3>
+          <p data-l="fr">ML et Deep Learning pour fiabiliser des capteurs électrochimiques, détecter les anomalies et suivre la dérive du parc.</p>
+          <p data-l="en">ML and Deep Learning to make electrochemical sensors reliable, detect anomalies and track fleet drift.</p>
+          <div class="tags"><span><span data-l="fr">Séries temporelles</span><span data-l="en">Time series</span></span><span>Anomaly detection</span></div>
+        </article>
+      </div>
+    </section>
 
-        <h3 class="category-title">NLP & Conversational AI</h3>
-        <div class="project-grid">
-          <article class="card">
-            <p class="tag">Arabic NLP</p>
-            <h3>CovidBot-Telegram</h3>
-            <p>Conversational assistant in Darija providing health guidance and info during the pandemic.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Frameworks</p>
-            <h3>wizzvet / aichatbot</h3>
-            <p>Chatbot implementations in specialized domains (veterinary) with structured intent handling.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Evaluation</p>
-            <h3>benchmark-pipeline</h3>
-            <p>Performance benchmarking for Rasa NLU pipelines across various training/testing datasets.</p>
-          </article>
-        </div>
+    <!-- EXPERIENCE -->
+    <section class="wrap section" id="parcours">
+      <div class="section-head reveal">
+        <p class="kicker">02</p>
+        <h2><span data-l="fr">Parcours</span><span data-l="en">Experience</span></h2>
+      </div>
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-logo"><img src="assets/logos/maestria_icon.png" alt="Maestria Innovation" /></div>
+          <div class="job-body">
+            <div class="job-head">
+              <h3><span data-l="fr">Ingénieur IA & Data</span><span data-l="en">AI & Data Engineer</span></h3>
+              <span class="when"><span data-l="fr">Mars 2022 – aujourd'hui</span><span data-l="en">Mar 2022 – present</span></span>
+            </div>
+            <p class="org">Maestria Innovation · Rennes</p>
+            <p data-l="fr">Salarié de Maestria Innovation, j'interviens en prestation auprès de ses clients : agents IA et LLM, Data Engineering et Data Science.</p>
+            <p data-l="en">Employed by Maestria Innovation, I work on assignment for its clients: AI agents and LLMs, data engineering and data science.</p>
+            <ul class="missions">
+              <li><img src="assets/logos/bretagne.png" alt="" /><span><b>Région Bretagne</b> · Data Breizh Compétences</span></li>
+              <li><img src="assets/logos/normandie.png" alt="" /><span><b>Carif-Oref / Région Normandie</b> · <span data-l="fr">Agent IA emploi-formation</span><span data-l="en">Jobs & training AI agent</span></span></li>
+              <li><img src="assets/logos/fleury.png" alt="" class="wide" /><span><b>Fleury Michon</b> · <span data-l="fr">Automatisation des imports de données</span><span data-l="en">Data import automation</span></span></li>
+              <li><span class="dot-ico"></span><span data-l="fr"><b>Autres projets</b> · recommandation (tourisme en ligne), qualité de l'air (IoT), R&D Computer Vision</span><span data-l="en"><b>Other projects</b> · recommendation (online travel), air quality (IoT), computer vision R&D</span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-logo"><img src="assets/logos/orange.png" alt="Orange" /></div>
+          <div class="job-body">
+            <div class="job-head">
+              <h3><span data-l="fr">Développeur IA</span><span data-l="en">AI Developer</span></h3>
+              <span class="when"><span data-l="fr">Févr. 2021 – Févr. 2022</span><span data-l="en">Feb 2021 – Feb 2022</span></span>
+            </div>
+            <p class="org">Orange Innovation · Cesson-Sévigné</p>
+            <ul class="bullets" data-l="fr">
+              <li>Benchmark des pipelines NLU utilisés par les chatbots.</li>
+              <li>Application web de clustering de textes (CamemBERT, Universal Sentence Encoder).</li>
+              <li>Voix dans un chatbot (Speech-to-Text, Text-to-Speech), chatbot Discord pour un client.</li>
+              <li>Découpage d'un chatbot en micro-bots pour Orange MEA.</li>
+            </ul>
+            <ul class="bullets" data-l="en">
+              <li>Benchmark of the NLU pipelines used by chatbots.</li>
+              <li>Web app for text clustering (CamemBERT, Universal Sentence Encoder).</li>
+              <li>Voice in a chatbot (Speech-to-Text, Text-to-Speech), Discord chatbot for a client.</li>
+              <li>Splitting a chatbot into micro-bots for Orange MEA.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-logo blank"><span>CFAO</span></div>
+          <div class="job-body">
+            <div class="job-head">
+              <h3><span data-l="fr">Prothésiste dentaire spécialiste CFAO</span><span data-l="en">Dental CAD/CAM technician</span></h3>
+              <span class="when"><span data-l="fr">Sept. 2015 – Sept. 2019</span><span data-l="en">Sep 2015 – Sep 2019</span></span>
+            </div>
+            <p class="org">Laboratoire Ceram'ille · Rennes</p>
+            <p data-l="fr">Conception et fabrication assistées par ordinateur. Une première expérience qui m'a appris la rigueur et le souci du détail.</p>
+            <p data-l="en">Computer-aided design and manufacturing. A first career that taught me rigour and attention to detail.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-        <h3 class="category-title">Data Engineering & Tools</h3>
-        <div class="project-grid">
-          <article class="card">
-            <p class="tag">Automation</p>
-            <h3>fleurymichon POC</h3>
-            <p>Automation of complex data import workflows for proof-of-concept industrial applications.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Visualization</p>
-            <h3>geps-techno</h3>
-            <p>Data visualization for maritime buoy sensor data with automated charting and report generation.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Datasets</p>
-            <h3>world_countries</h3>
-            <p>ISO-compliant country-code datasets available in multiple formats (CSV, JSON, SQL).</p>
-          </article>
-        </div>
+    <!-- OTHER PROJECTS -->
+    <section class="wrap section" id="labs">
+      <div class="section-head reveal">
+        <p class="kicker">03</p>
+        <h2><span data-l="fr">Autres réalisations</span><span data-l="en">More projects</span></h2>
+        <p class="section-sub" data-l="fr">R&D, projets de formation et expérimentations.</p>
+        <p class="section-sub" data-l="en">R&D, training projects and experiments.</p>
+      </div>
+      <div class="mini-grid">
+        <article class="mini reveal"><p class="mini-tag">Computer Vision</p><h3>Virtual Coach</h3><p data-l="fr">Estimation de pose pour compter les répétitions et corriger la posture en salle de sport.</p><p data-l="en">Pose estimation to count gym reps and coach exercise form.</p></article>
+        <article class="mini reveal"><p class="mini-tag"><span data-l="fr">Recommandation</span><span data-l="en">Recommendation</span></p><h3><span data-l="fr">Voyages surprises</span><span data-l="en">Surprise trips</span></h3><p data-l="fr">Recommandation de destinations et d'activités selon le profil du voyageur.</p><p data-l="en">Recommending destinations and activities from the traveller's profile.</p></article>
+        <article class="mini reveal"><p class="mini-tag">Deep Learning</p><h3><span data-l="fr">Segmentation sémantique</span><span data-l="en">Semantic segmentation</span></h3><p data-l="fr">Classification d'images au pixel près pour la vision embarquée.</p><p data-l="en">Pixel-level image classification for embedded vision.</p></article>
+        <article class="mini reveal"><p class="mini-tag">Medical AI</p><h3><span data-l="fr">Imagerie dentaire</span><span data-l="en">Dental imaging</span></h3><p data-l="fr">Segmentation dentaire et aide à l'imagerie médicale, au croisement de mes deux métiers.</p><p data-l="en">Dental segmentation and medical imaging support, where my two careers meet.</p></article>
+        <article class="mini reveal"><p class="mini-tag">NLP</p><h3>CovidBot</h3><p data-l="fr">Assistant conversationnel Telegram en darija pour informer pendant la pandémie.</p><p data-l="en">Telegram assistant in Darija sharing health guidance during the pandemic.</p></article>
+        <article class="mini reveal"><p class="mini-tag">Data Viz</p><h3><span data-l="fr">Bouées maritimes</span><span data-l="en">Maritime buoys</span></h3><p data-l="fr">Visualisation des données de capteurs de bouées, graphiques et rapports automatiques.</p><p data-l="en">Buoy sensor data visualisation with automated charts and reports.</p></article>
+      </div>
+    </section>
 
-        <h3 class="category-title">Specialized AI Applications</h3>
-        <div class="project-grid">
-          <article class="card">
-            <p class="tag">Edge AI</p>
-            <h3>virtualcoach</h3>
-            <p>Pose estimation tool for gym repetition counting and real-time form coaching.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Audio AI</p>
-            <h3>ramdam / fingerprint</h3>
-            <p>Audio processing and fingerprinting research for identification and classification.</p>
-          </article>
-          <article class="card">
-            <p class="tag">Medical AI</p>
-            <h3>medai / med_segmentation</h3>
-            <p>Exploratory AI projects focused on dental segmentation and medical imaging assistance.</p>
-          </article>
+    <!-- SKILLS -->
+    <section class="wrap section" id="competences">
+      <div class="section-head reveal">
+        <p class="kicker">04</p>
+        <h2><span data-l="fr">Compétences</span><span data-l="en">Skills</span></h2>
+      </div>
+      <div class="skills">
+        <div class="skill-card reveal">
+          <h3><span data-l="fr">IA & agents</span><span data-l="en">AI & agents</span></h3>
+          <div class="chips"><span>LLM</span><span>IA agentique</span><span>MCP</span><span>Tool calling</span><span>RAG</span><span>Embeddings</span><span>NLP</span><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span></div>
         </div>
-
-        <div class="additional-projects reveal">
-          <h3>Other Contributions</h3>
-          <p class="chips-list">
-            rak, maestria, restitbzh, datascientest, rca, video_analyzer, mylittletrip, P10-chatbot-azure, driftdetection, clusterapp, foodbot, noise_generator, v-loue.
-          </p>
+        <div class="skill-card reveal">
+          <h3>Data Engineering</h3>
+          <div class="chips"><span>ETL</span><span>PostgreSQL</span><span>SQL</span><span><span data-l="fr">Modèle en étoile</span><span data-l="en">Star schema</span></span><span>Spark</span><span>Airflow</span><span><span data-l="fr">Qualité des données</span><span data-l="en">Data quality</span></span><span>RGPD</span></div>
         </div>
-      </section>
+        <div class="skill-card reveal">
+          <h3><span data-l="fr">Développement</span><span data-l="en">Development</span></h3>
+          <div class="chips"><span>Python</span><span>FastAPI</span><span>Pandas</span><span>Scikit-learn</span><span>PyTorch</span><span>TensorFlow</span><span>TypeScript</span><span>React</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Cloud & DevOps</h3>
+          <div class="chips"><span>Docker</span><span>GitHub Actions</span><span>Azure</span><span>GCP</span><span>vLLM</span><span>Modal</span><span>Git</span></div>
+        </div>
+      </div>
+    </section>
 
-      <section id="contact" class="panel reveal">
-        <h2>Contact</h2>
-        <p>Open to collaborations in AI engineering, data products, and platform delivery.</p>
+    <!-- EDUCATION -->
+    <section class="wrap section" id="formation">
+      <div class="section-head reveal">
+        <p class="kicker">05</p>
+        <h2><span data-l="fr">Diplômes & certifications</span><span data-l="en">Education & certifications</span></h2>
+      </div>
+      <div class="edu">
+        <div class="edu-item reveal">
+          <div class="edu-logos"><img src="assets/logos/mines_exec.png" alt="Mines Paris – PSL Executive Education" /><img src="assets/logos/liora.png" alt="Liora" class="sm" /></div>
+          <div><h3>Certification Data Engineer</h3><p>Mines Paris – PSL Executive Education · <span data-l="fr">en partenariat avec Liora · niveau Bac+5</span><span data-l="en">with Liora · Master's level</span></p></div>
+          <span class="year">2026</span>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-logos"><img src="assets/logos/openclassrooms.png" alt="OpenClassrooms" class="sq" /></div>
+          <div><h3><span data-l="fr">Ingénieur en intelligence artificielle</span><span data-l="en">AI Engineer</span></h3><p>OpenClassrooms · <span data-l="fr">Bac+5, RNCP niveau 7</span><span data-l="en">Master's level (RNCP level 7)</span></p></div>
+          <span class="year">2023</span>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-logos"><img src="assets/logos/microsoft.png" alt="Microsoft" /></div>
+          <div><h3><span data-l="fr">Développeur en intelligence artificielle</span><span data-l="en">AI Developer</span></h3><p><span data-l="fr">École Microsoft IA · Bac+3, RNCP niveau 6</span><span data-l="en">Microsoft AI School · Bachelor's level (RNCP level 6)</span></p></div>
+          <span class="year">2022</span>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-logos"><img src="assets/logos/damas.png" alt="Université de Damas" class="sq" /></div>
+          <div><h3><span data-l="fr">Licence en économie</span><span data-l="en">Bachelor's in Economics</span></h3><p><span data-l="fr">Université de Damas · Syrie</span><span data-l="en">Damascus University · Syria</span></p></div>
+          <span class="year">2015</span>
+        </div>
+      </div>
+      <div class="certs reveal">
+        <span class="cert">Microsoft AI-102 · Azure AI Engineer Associate</span>
+        <span class="cert">Rasa Advanced Developer</span>
+        <span class="cert"><span data-l="fr">Méthodes agiles de gestion de projet</span><span data-l="en">Agile project management</span></span>
+      </div>
+      <p class="langs reveal">
+        <span data-l="fr"><b>Langues</b> : français bilingue · anglais professionnel · arabe langue maternelle</span>
+        <span data-l="en"><b>Languages</b>: French (bilingual) · English (professional) · Arabic (native)</span>
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="wrap section" id="contact">
+      <div class="contact reveal">
+        <div>
+          <h2><span data-l="fr">Un projet data ou IA&nbsp;? Parlons&#8209;en.</span><span data-l="en">A data or AI project? Let's talk.</span></h2>
+          <p data-l="fr">Basé à Rennes, ouvert aux échanges sur l'IA agentique, les plateformes de données et leur mise en production.</p>
+          <p data-l="en">Based in Rennes, France, happy to talk about agentic AI, data platforms and getting them into production.</p>
+        </div>
         <div class="contact-links">
-          <a href="mailto:khatbahusain@gmail.com">khatbahusain@gmail.com</a>
-          <a href="https://www.linkedin.com/in/husain-khatba-aa027a13a/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://twitter.com/husainkhatba" target="_blank" rel="noreferrer">X / Twitter</a>
+          <a class="btn primary" href="mailto:khatba.husain@gmail.com">khatba.husain@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/husain-khatba-aa027a13a/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/khatbahusain" target="_blank" rel="noopener">GitHub</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <p>&copy; <span id="year"></span> Husain Khatba</p>
-    </footer>
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Husain Khatba</p>
+    <a href="#top"><span data-l="fr">Retour en haut ↑</span><span data-l="en">Back to top ↑</span></a>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
