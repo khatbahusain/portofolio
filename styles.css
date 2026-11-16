@@ -293,3 +293,4 @@ h1, h2, h3 { font-family: var(--head); margin: 0; letter-spacing: -0.02em; line-
   .client-logos li.wide { padding: 8px 12px; }
   .client-logos img { max-height: 42px; max-width: 110px; }
 }
+.edu-logos img.sq + img.ms { max-height: 22px; max-width: 96px; }
